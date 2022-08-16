@@ -60,19 +60,19 @@ window.addEventListener("scroll", function () {
         sec.getBoundingClientRect().top < 100 &&
         sec.getBoundingClientRect().top > -400
         ) {
-        sec.classList.add("your-active-class");
+            sec.classList.add("your-active-class");
 
         // Add class 'active' to anchor when click it or near of his section viewport
-        for (a of anchor) {
-            if (a.getAttribute("href").slice(1) == sec.getAttribute("id")) {
-            a.classList.add("active");
-            } else {
-            a.classList.remove("active");
+            for (a of anchor) {
+                if (a.getAttribute("href").slice(1) == sec.getAttribute("id")) {
+                a.classList.add("active");
+                } else {
+                a.classList.remove("active");
+                }
             }
-        }
 
         } else {
-        sec.classList.remove("your-active-class");
+            sec.classList.remove("your-active-class");
         }
     }
 });
