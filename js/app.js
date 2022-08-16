@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
     for (sec of sections) {
         if (
             //Use the getBoundingClientRect() function to calculate the distance between the section and the top of the page
-        sec.getBoundingClientRect().top < 50 &&
+        sec.getBoundingClientRect().top < 100 &&
         sec.getBoundingClientRect().top > -400
         ) {
         sec.classList.add("your-active-class");
