@@ -57,11 +57,10 @@ window.addEventListener("scroll", function () {
     for (sec of sections) {
         if (
             //Use the getBoundingClientRect() function to calculate the distance between the section and the top of the page
-        sec.getBoundingClientRect().top < 100 &&
-        sec.getBoundingClientRect().top > -400
+        sec.getBoundingClientRect().top < 50&&
+        sec.getBoundingClientRect().top > -500
         ) {
-            sec.classList.add("your-active-class");
-
+        sec.classList.add("your-active-class");
         // Add class 'active' to anchor when click it or near of his section viewport
             for (a of anchor) {
                 if (a.getAttribute("href").slice(1) == sec.getAttribute("id")) {
@@ -72,7 +71,7 @@ window.addEventListener("scroll", function () {
             }
 
         } else {
-            sec.classList.remove("your-active-class");
+        sec.classList.remove("your-active-class");
         }
     }
 });
